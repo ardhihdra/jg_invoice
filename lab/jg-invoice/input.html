@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Penyewaan JG Gear</title>
+    <link rel="stylesheet" type="text/css" href="/form.css">
+      <!--  -->
+
+    <div class="row">
+      <label class="col-50"> <a href="form.html">Penyewaan</a></label>
+      <label class="col-50"><a href="return.html">Pengembalian</a></label>
+      <label class="col-50"><a href="stock.html">Cek Stok</a></label>
+      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
+      <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
+      <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
+    </div>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container">
+        <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+
+        <form action="/baranglama" method='post' name='form1'>
+            <div class="col-50">
+              <h1>Update Barang Lama</h1>
+              <label for="">termasuk jika barang rusak yang telah diperbaiki</label><br><br>
+              <label>Pilih barang : <select class="gear" name="gear">
+                  <option value=""></option>
+              </select></label><br>
+              <label>Input update barang total (biarkan nol jika hanya berubah harga): <input type="numbertext" id="input_qty" name="ngear" value=0 placeholder="misal 3"></label><br>
+              <label>Input perubahan harga (biarkan nol jika tidak berubah) : <input type="numbertext" name="ubahharga" value="0"></label>
+            </div>
+          <input type="submit" value="Tambahkan Barang" class="btn">
+        </form>
+
+        <form action="/inputbarang" method='post' name='form1'>
+          <br>
+          <div class="<col-75>">
+            <h3>Tambahkan Barang Baru</h3>
+            <label for="namabarang"><i class=""></i>Nama Barang</label>
+            <input type="text" id="namabarang" name="stuffname" placeholder="Pecut Kuda">
+
+            <label for="hargabarang"><i class=""></i>Harga Sewa/Hari</label>
+            <input type="text" id="hargabarang" name="stuffprice" placeholder="15000">
+
+            <label for="namabarang"><i class=""></i>Total Barang</label>
+            <input type="text" id="totalbarang" name="stuffqty" placeholder="100">
+          </div>
+          <input type="submit"  value="Tambahkan Barang" class="btn">
+          <script type="text/javascript">
+            function konfirbarang(){
+              alert("barang termasukkan ke database");
+            }
+          </script>
+        </form>
+      </div>
+      <div class="container">
+
+      </div>
+    </div>
+  </body>
+</html>

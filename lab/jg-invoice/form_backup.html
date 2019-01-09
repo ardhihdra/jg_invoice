@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Penyewaan JG Gear</title>
+    <style >
+      .row {
+        display: -ms-flexbox; /*IE10*/
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 10px -16px;
+      }
+
+      .col-25 {
+        -ms-flex: 25%;
+        flex: 25%;
+      }
+
+      .col-50 {
+        -ms-flex: 10%;
+        flex: 10%;
+      }
+
+
+      .col-75 {
+        -ms-flex: 75%;
+        flex: 75%;
+      }
+
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+
+      .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+      }
+
+      input[type=numbertext] {
+        width: 10%;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+      }
+
+      input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+
+      .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+
+      .btn:hover {
+        background-color: #45a049;
+      }
+
+      span.price {
+        float: right;
+        color: grey;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+
+    <div class="row">
+      <label class="col-50"> <a href="form.html">Penyewaan</a></label>
+      <label class="col-50"><a href="return.html">Pengembalian</a></label>
+      <label class="col-50"><a href="stock.html">Cek Stok</a></label>
+      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
+    </div>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="/return.html" method='post' name='form1'>
+            <div class="row">
+              <div class="col-50">
+                <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+                <h3>Info Penyewa</h3>
+
+                <label for="fname"><i class="fa fa-user"></i> Nama Penyewa</label>
+                <input type="text" id="fname" name="name" placeholder="Eka Gacong">
+                <label for="pnumber"><i class="fa fa-envelope"></i> Nomor HP</label>
+                <input type="text" id="pnumber" name="phonenumber" placeholder="085794158166">
+                <label for="dest"><i class="fa fa-destination"></i> Tujuan</label>
+                <input type="text" id="dst" name="destination" placeholder="Pataruman">
+
+
+                <div class="row">
+                  <div class="col-50">
+                    <label for="rndate"><i class="fa fa-date"></i>Tanggal Penyewaan</label>
+                    <input type="datetime-local" id="rndate" name="rentdate" placeholder="">
+                  </div>
+                  <div class="col-50">
+                    <label for="rtdate"><i class="fa fa-date"></i>Tanggal Pengembalian</label>
+                    <input type="datetime-local" id="rtdate" name="returndate" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <h3>Gear Set</h3>
+                <label for="fname">Gear</label>
+                <div class="col-50">
+                  <select class="" name="gear">
+                    <option value="tenda"></option>
+                    <option value="carrier"></option>
+                  </select>
+
+                  <tr class="">
+                    <label for="tenda"><i class="fa fa-tenda"></i>
+                    <td><input type="checkbox" id="tent" name="tent" value="1"></td>
+                    <td>Tenda</td>
+                    <td><input type="numbertext" id="tent4qty" name="tent4qty" value=0 placeholder="misal 3"></td>
+                    <td>Jenis<input type="numbertext" id="tentkind" name="tentkind" value=""></td>
+                    </label>
+                  </tr>
+                  <tr class="">
+                    <label for="flysheet"><i class="fa fa-flysheet"></i>
+                    <td><input type="checkbox" id="flysheet" name="flysheet" value="1"></td>
+                    <td>Flysheet</td>
+                    <td><input type="numbertext" id="flysheetqty" name="flysheetqty" value="0" placeholder="misal 3"></td>
+                    </label>
+                  </tr>
+                  <tr class="">
+                    <label for="matras"><i class="fa fa-tenda"></i>
+                    <td><input type="checkbox" id="matras" name="matras" value="1"></td>
+                    <td>Matras</td>
+                    <td><input type="numbertext" id="matrasqty" name="qty" placeholder="misal: 4"></td>
+                    </label>
+                  </tr>
+                  <tr class="">
+                    <label for="kompor"><i class=""></i>
+                    <td><input type="checkbox" id="kompor" name="matras" value="1"></td>
+                    <td>Kompor</td>
+                    <td><input type="numbertext" id="komporqty" name="qty" placeholder="misal: 4"></td>
+                    </label>
+                  </tr>
+                </div>
+              </div>
+
+            </div>
+
+            <input type="submit" value="Continue to checkout" class="btn">
+          </form>
+        </div>
+      </div>
+
+      <div class="col-25">
+        <div class="container">
+          <h4>Cart
+            <span class="price" style="color:black">
+              <i class="fa fa-shopping-cart"></i>
+              <b>4</b>
+            </span>
+          </h4>
+          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

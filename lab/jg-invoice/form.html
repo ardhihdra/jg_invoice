@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Penyewaan JG Gear</title>
+    <link rel="stylesheet" type="text/css" href="/form.css">
+      <!--  -->
+
+    <div class="row">
+      <label class="col-50"> <a href="form.html">Penyewaan</a></label>
+      <label class="col-50"><a href="return.html">Pengembalian</a></label>
+      <label class="col-50"><a href="stock.html">Cek Stok</a></label>
+      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
+      <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
+      <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
+    </div>
+  </head>
+  <body>
+    <div class="row">
+
+      <div class="container">
+        <form action="/checkout.html" method='post' name='form1'>
+          <div class="row">
+            <div class="col-50">
+              <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+              <h1>Info Penyewa</h1>
+
+              <label for="fname"><i class="fa fa-user"></i> Nama Penyewa</label>
+              <input type="text" id="fname" name="name" placeholder="Eka Gacong">
+              <label for="pnumber"><i class="fa fa-envelope"></i> Nomor HP</label>
+              <input type="text" id="pnumber" name="phonenumber" placeholder="085794158166">
+              <label for="dest"><i class="fa fa-destination"></i> Tujuan</label>
+              <input type="text" id="dst" name="destination" placeholder="Pataruman">
+              <label for="email"><i class="fa fa-email"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="odol@gmail.com">
+
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="rndate"><i class="fa fa-date"></i>Tanggal Penyewaan (Pengambilan)</label>
+                  <input type="datetime-local" id="rndate" name="rentdate"value={start.toHtmlInput_datetime_local()}>
+                </div>
+                <div class="col-50">
+                  <label for="rtdate"><i class="fa fa-date"></i>Tanggal Pengembalian</label>
+                  <input type="datetime-local" id="rtdate" name="returndate" value={start.toHtmlInput_datetime_local()}>
+                </div>
+              </div>
+              <br>
+
+              <label for="jaminan"><i class="fa fa-jaminan"></i> Jaminan</label>
+              <div class="col-75">
+                <input type="checkbox" name="ktp" value="ktp">KTP<br>
+                <input type="checkbox" name="sim" value="sim">SIM<br>
+                <input type="checkbox" name="ktm" value="ktm">KTM<br>
+                <input type="checkbox" name="kp" value="kartupelajar">KARTU PELAJAR<br>
+                <input type="checkbox" name="dll" value="dll">DLL<br>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Gear Set</h3>
+              <label for="fname">Gear</label>
+              <div class="row">
+                <select class="col-50" name="gear1"><option name="nul" >- : 0</option></select>
+                jumlah : <input type="numbertext" name="barang1" class="col-50" value="0">
+              </div>
+              <div class="row">
+                <select class="col-50" name="gear2"><option name="nul">- : 0</option></select>
+                jumlah : <input type="numbertext" name="barang2" class="col-50" value="0">
+              </div>
+              <div class="row">
+                <select class="col-50" name="gear3"><option name="nul">- : 0</option></select>
+                jumlah : <input type="numbertext" name="barang3" class="col-50" value="0">
+              </div>
+              <div class="row">
+                <select class="col-50" name="gear4"><option name="nul">- : 0</option></select>
+                jumlah : <input type="numbertext" name="barang4" class="col-50" value="0">
+              </div>
+              <div class="row">
+                <select class="col-50" name="gear5"><option name="nul">- : 0</option></select>
+                jumlah : <input type="numbertext" name="barang5" class="col-50" value="0">
+              </div>
+              <div class="row">
+                <select class="col-50" name="gear6"><option name="nul">- : 0</option></select>
+                jumlah : <input type="numbertext" name="barang6" class="col-50" value="0">
+              </div>
+              <div class="row">
+                <select class="col-50" name="gear7"><option name="nul">- : 0<divh class=harga7></divh></option></select>
+                jumlah : <input type="numbertext" name="barang7" class="col-50" value="0">
+              </div>
+
+            </div>
+          </div>
+
+
+        <input type="submit" value="Continue to checkout" class="btn">
+        </form>
+      </div>
+    </div>
+
+      <div class="col-25">
+        <div class="container">
+          <h4>List Harga
+            <span class="price" style="color:black">
+              <i class="fa fa-shopping-cart"></i>
+              <b>4</b>
+            </span>
+          </h4>
+          <div4>
+            <!--diisi list harga-->
+          </div4>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

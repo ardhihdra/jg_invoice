@@ -1,0 +1,44 @@
+/* KK : Fisika Bumi dan Sistem Kompleks
+Pembimbing : Bagus Endar
+*/
+
+Ardhi Rofi Mufdhila
+
+bismillah
+Oke disini kami bakal cerita dikit soal Persfisika bumian nih. Dan terutama Pak Bagus sii karena itu salah satu alasan kami juga jadinya milih fisbum. wk
+
+karena kami orang sunda, jadi mulai dari sini ceritanya bakal pake urang aja yah hehe.
+
+Urang sebenernya saat itu tertarik perkodingan atau AI dan ga ada tertarik-tertariknya sama fisbum wkwk, apalagi abis ambil matkul wajibnya, tiap kali masuk kelas itu udah kaya jaman baheula suasananya. wk no offense
+
+oke, berbarengan dengan itu, urang juga ambil Gelombangnya pembimbing kan (saat itu belom jadi bimbingan lah). Jujur aja si, kelasnya juga ga jelas sebenernya wkwkwkwk, tau sendiri la ya wk. tapi tapi tapi, ada satu hal yang buat urang selalu terpesona haha, kalo di kelas, beliau selalu ngomong soal teknologi, mulai dari desain pesawat, teknologi imaging, sampe license ori matlab yang dibandingin sama beli bakso. 
+
+yang ultimate itu ketika beliau ngomong kira-kira gini, 
+
+"kamu tau kenapa indonesia ga maju-maju? atau bisa dijajah sama walanda yang jumlahnya cuma beberapa biji kapal (vs indo sabang-merauke)? itu karena kita ga main di teknologi, segala macem harus beli!"
+
+atau yang ini 
+"ngapain capek-capek ngomongin politik kalau isinya cuma itu-itu aja, mending pemerintah ngomongin gimana caranya bikin kayak toyota yang keuntunganya seorde sama APBN ktia."
+
+beuh, buat urang ini nampar banget. dan ngebuat urang tertarik sama kegiatanya beliau. Ketika seraching2, ternyata penelitianya juga ada yang pake Neural Network. Urang yang tertarik AI jadi makin tertariklah otomatis (dan ini yang masih dikejer sebenernya). 
+
+fyi beliau juga punya perusahaan research-based  (RFL) soal minyak dan gas di cibeunying kaler, banyak buat alat, konsultan, petarung proyek perusahaan luar dalam negeri, dan laenya. 
+tapi yang ngebuat keren itu, SEJAK KAPAN TEKNOLOGI DI CIBEUNYING KALER BISA DIPAKE DI DUNIA EUY! 
+ 
+urang yang saat itu lagi ngubur idealisme pengen fisika teori, dikerumuni temen-temen instrumentasi, dan merasa tersiksa belum punya arahan KK, ceritanya kemudian hari hubungi beliau lewat sms wkw. 
+
+Awalnya judulnya tuh kermantau,tapi tiba-tiba jadi KP dan disuruh belajar soal perfisbuman. Suatu hari urang pernah bilang mau ikut pelatihan Wolfram buat data scince, beliau langsung nyawut, "menurutmu seberapa besar sih big data itu? 1 tera? lebih? di fisbum banyak!", urang sedikit teryakinkan wk. 
+
+Setelah awal minta topiknya soal AI dan semacamnya, beliau nyuruh belajar soal geomechanics dan hubunganya sama well stability. sampe sekarang si gatau nasibnya kemana ini topik wk. Tapi itu cukup sih, dan bisa nyelesain sarjana fisika ditempat kaya gini. maneh coba bayangin aja, di kantornya beliau ngomong sama karyawan itu fisika banget coy, "energi ... radiasinya gimana .. kekuatan motornya ..". intinya, urang udah seneng sih bisa belajar fisika dan terapanya sama beliau.
+
+Beliau tu ahli gelombang sebenernya, terutama seismik, tapi beliau juga ngbimbing yang hubunganya sama instrumentasi kayak temen urang yang ngerjain mems accelerometer. 
+
+
+
+buat yang mau narget perusahaan2 gede kek pertamina, schlumberger, dkk bisa sama beliau, siapin IPK gede aja katanya wkwk (urang out udah)
+
+buat yang masih bingung kk dan tertarik AI juga w saranin dosen-dosen berikut :
+
+1. Pak Rizal K : beliau yang sering ngoding di perusahaan pa bagus, tapi w belom punya cukup nyali buat jadi murid beliau, jujur aja wk. expert diaa
+2. Pak Ferry I : beliau pernah cerita pemilihan komposisi material zaman now udah pake AI, tapi sekarang belom ada murid yang mau topiknya itu. Urang pengen banget sebenernya tapi terlanjur udah bimbingan :((
+

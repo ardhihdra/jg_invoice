@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Penyewaan JG Gear</title>
+    <link rel="stylesheet" type="text/css" href="/form.css">
+      <!-- ntar css di href ilangin  -->
+
+    <div class="row">
+      <label class="col-50"> <a href="form.html">Penyewaan</a></label>
+      <label class="col-50"><a href="return.html">Pengembalian</a></label>
+      <label class="col-50"><a href="stock.html">Cek Stok</a></label>
+      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
+        <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
+      <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
+    </div>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container">
+        <img src="/JG.png" alt="jg-logo" heigh="5%" width="5%">
+        <form action="/form.html" method='post' name='form1'>
+          <br>
+          <h3>Verifikasi Pesanan Anda</h3>
+          <h4>Kembali ke penyewaan jika salah</h4>
+          <div class="row">
+            <div1 class="col-50" name="penyewa">
+              <!-- input profil -->
+
+            </div1>
+            <div class="col-50">
+              <div class="row">
+                <label for="namabarang" class="col-50"><i ><b>Nama Barang</b></i></label>
+                <label for="hargabarang" class="col-50"><i ><b>Harga Sewa/Hari</b></i></label>
+                <label for="namabarang" class="col-50"><i ><b>Total Barang</b></i></label>
+              </div>
+
+              <div2>
+                <!-- input barang -->
+
+              </div2>
+            </div>
+          </div>
+          <br>
+          <div >
+            <div3 class='col-50'>
+              <!-- input harga -->
+            </div3>
+            <label>Uang Muka :<input type="textnumber" name="dp" value ="0"></label>
+            <label>Sisa : <input type="textnumber" class="col-50" name="sisa" value="0"></label>
+          </div>
+          <br>
+          <label onclick="printInvoice()">Print Invoice</label>
+          <input type="submit" onclick="printInvoice()" value="Sewa!" class="btn">
+          <script type="text/javascript">
+            function konfirbarang(){
+              alert("barang termasukkan ke database");
+            }
+            function printInvoice(){window.print();}
+          </script>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

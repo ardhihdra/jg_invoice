@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Penyewaan JG Gear</title>
+    <link rel="stylesheet" type="text/css" href="/form.css">
+      <!-- ntar css di href ilangin  -->
+
+    <div class="row">
+      <label class="col-50"> <a href="form.html">Penyewaan</a></label>
+      <label class="col-50"><a href="return.html">Pengembalian</a></label>
+      <label class="col-50"><a href="stock.html">Cek Stok</a></label>
+      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
+      <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
+      <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
+    </div>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+      <h1>Cek Stok Barang</h1>
+      <form class="" action="/stock.html" method="post">
+        <div class="col-50">
+          <select class="col-50" name="gear">
+            <option name="nul" >-</option>
+          </select><br><br>
+          Banyaknya item : <input type="textnumber" name="banyaknyaitem" value="0">
+          <br><br>
+          <div class="row">
+            <div class="col-50">
+              <label for="rndate"><i class="fa fa-date"></i>Tanggal Penyewaan (Pengambilan)</label>
+              <input type="datetime-local" id="rndate" name="rentdate" placeholder="">
+            </div>
+            <div class="col-50">
+              <label for="rtdate"><i class="fa fa-date"></i>Tanggal Pengembalian</label>
+              <input type="datetime-local" id="rtdate" name="returndate" placeholder="">
+            </div>
+          </div>
+        </div><br>
+        <input type="submit" name="" value="Cek Gear" class="btn">
+      </form>
+
+    </div>
+  </body>
+
+</html>
