@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="/form.css">
       <!--  -->
 
-    <div class="row">
+    <div class="row" id="index">
       <label class="col-50"> <a href="form.html">Penyewaan</a></label>
       <label class="col-50"><a href="return.html">Pengembalian</a></label>
       <label class="col-50"><a href="stock.html">Cek Stok</a></label>
-      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="input.html">Update Barang</a></label>
       <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
       <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
       <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
@@ -19,17 +19,18 @@
   <body>
     <div class="row">
       <div class="container">
-        <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+        <img src="/JG.png" alt="jg-logo" width="5%">
 
         <form action="/baranglama" method='post' name='form1'>
             <div class="col-50">
               <h1>Update Barang Lama</h1>
-              <label for="">termasuk jika barang rusak yang telah diperbaiki</label><br><br>
+              <br><br>
               <label>Pilih barang : <select class="gear" name="gear">
-                  <option value=""></option>
+                  <option value="">- : 0</option>
               </select></label><br>
-              <label>Input update barang total (biarkan nol jika hanya berubah harga): <input type="numbertext" id="input_qty" name="ngear" value=0 placeholder="misal 3"></label><br>
-              <label>Input perubahan harga (biarkan nol jika tidak berubah) : <input type="numbertext" name="ubahharga" value="0"></label>
+              <label>Input update TOTAL BARANG  (biarkan nol jika hanya berubah harga): <input type="numbertext" id="input_qty" name="ngear" value=0 placeholder="misal 3"></label>
+              <label>Input PERUBAHAN HARGA (biarkan nol jika tidak berubah) : <input type="numbertext" name="ubahharga" value="0"></label>
+              <input type="checkbox" name="hapus" value="1">Centang untuk menghapus barang<br><br>
             </div>
           <input type="submit" value="Tambahkan Barang" class="btn">
         </form>

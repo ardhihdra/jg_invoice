@@ -17,7 +17,15 @@ con.connect(function(err){
   con.query("SELECT * FROM Barang", function(err,result){
     if(err) throw err;
     console.log(result);
+
   });
+ con.query("SELECT * FROM BarangRusak", function(err,result){
+    if(err) throw err;
+    console.log(result);
+
+  });
+
+
   //con.query("DROP TABLE Barang", function(err,reuslt){if(err) throw err;});
   /*var sqlbarang = "CREATE TABLE Barang (nama_barang VARCHAR(50), harga_sewa INTEGER,"
                 + " siap_sewa INTEGER, total_barang INTEGER"+ ")";

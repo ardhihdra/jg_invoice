@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="/form.css">
       <!-- ntar css di href ilangin  -->
 
-    <div class="row">
+    <div class="row" id="index">
       <label class="col-50"> <a href="form.html">Penyewaan</a></label>
       <label class="col-50"><a href="return.html">Pengembalian</a></label>
       <label class="col-50"><a href="stock.html">Cek Stok</a></label>
-      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="input.html">Update Barang</a></label>
       <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
       <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
       <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
@@ -20,26 +20,34 @@
 
   <body>
     <div class="container">
-      <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+      <img src="/JG.png" alt="jg-logo"  width="5%">
       <div class="col-50">
-      <h4>Download file invoice</h4>
-      <form action="/invoice" method="post">
+      <h4>Download File Invoice</h4>
+      <form action="/invoice" method="post" target="_blank">
         <input type="submit" name="invoice" value="download invoice"></input><br>
       </form>
-      <h4>Download file stok gear</h4>
-      <form action="/gear" method="post">
+      <h4>Download File Penyewa</h4>
+      <form action="/penyewa" method="post" target="_blank">
+        <input type="submit" name="invoice" value="download penyewa"></input><br>
+      </form>
+      <h4>Download File Stok Gear</h4>
+      <form action="/gear" method="post" target="_blank">
         <input type="submit" value="download gear"></input><br>
       </form>
-      <h4>Download file penyewaan gear</h4>
-      <form action="/frequentgear" method="post">
+      <h4>Download File Penyewaan Gear</h4>
+      <form action="/frequentgear" method="post" target="_blank">
+        <input type="submit" value="Download file penyewaan gear"></input><br>
       </form>
-      <input type="submit" value="Download file penyewaan gear"></input><br>
-      <h4>Download file tujuan favorit</h4>
-      <form action="/frequentdest" method="post">
+      <h4>Download File Kerusakan</h4>
+      <form action="/gearrusak" method="post" target="_blank">
+        <input type="submit" value="Download file kerusakan gear"></input><br>
+      </form>
+      <h4>Download File Tujuan Favorit</h4>
+      <form action="/frequentdest" method="post" target="_blank">
         <input type="submit" value="Download file tujuan favorit"></input><br>
       </form>
       <h4>Download rekap pemasukan</h4>
-      <form action="/income" method="post">
+      <form action="/income" method="post" target="_blank">
         <input type="submit" value="Download rekap pemasukan"></input><br>
       </form>
       </div>

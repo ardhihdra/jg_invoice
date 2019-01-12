@@ -34,6 +34,25 @@
   padding: 0 16px;
 }
 
+#index {
+    display: -ms-flexbox; /*IE10*/
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 10px -16px;
+    background-color:  #4CAF50;
+    color: white;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 100%;
+}
+
+a {
+  color: white;
+  font-family: sans-serif;
+}
+
 .container {
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
@@ -95,6 +114,31 @@ label {
   font-size: 17px;
 }
 
+.btn2 {
+  background-color: #4C0000;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn3 {
+  background-color: #4C0000;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 20%%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
 .btn:hover {
   background-color: #45a049;
 }
@@ -112,4 +156,47 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+
+
+.fadate {
+    position: relative;
+    width: 150px; height: 20px;
+    color: white;
+}
+
+.fadate:before {
+    position: absolute;
+    top: 3px; left: 3px;
+    content: attr(data-date);
+    display: inline-block;
+    color: black;
+}
+
+.fadate::-webkit-datetime-edit, .fadate::-webkit-inner-spin-button, .fadate::-webkit-clear-button {
+    display: none;
+}
+
+.fadate::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    color: black;
+    opacity: 1;
 }

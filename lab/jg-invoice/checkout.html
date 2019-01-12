@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/form.css">
       <!-- ntar css di href ilangin  -->
 
-    <div class="row">
+    <div class="row" id="index">
       <label class="col-50"> <a href="form.html">Penyewaan</a></label>
       <label class="col-50"><a href="return.html">Pengembalian</a></label>
       <label class="col-50"><a href="stock.html">Cek Stok</a></label>
@@ -19,10 +19,10 @@
   <body>
     <div class="row">
       <div class="container">
-        <img src="/JG.png" alt="jg-logo" heigh="5%" width="5%">
+        <img src="/JG.png" alt="jg-logo"width="5%">
         <form action="/form.html" method='post' name='form1'>
           <br>
-          <h3>Verifikasi Pesanan Anda</h3>
+          <h1>Verifikasi Pesanan Anda</h1>
           <h4>Kembali ke penyewaan jika salah</h4>
           <div class="row">
             <div1 class="col-50" name="penyewa">
@@ -32,7 +32,7 @@
             <div class="col-50">
               <div class="row">
                 <label for="namabarang" class="col-50"><i ><b>Nama Barang</b></i></label>
-                <label for="hargabarang" class="col-50"><i ><b>Harga Sewa/Hari</b></i></label>
+                <label for="hargabarang" class="col-50"><i ><b>Harga Sewa</b></i></label>
                 <label for="namabarang" class="col-50"><i ><b>Total Barang</b></i></label>
               </div>
 
@@ -47,17 +47,17 @@
             <div3 class='col-50'>
               <!-- input harga -->
             </div3>
-            <label>Uang Muka :<input type="textnumber" name="dp" value ="0"></label>
-            <label>Sisa : <input type="textnumber" class="col-50" name="sisa" value="0"></label>
+            <label>Uang Muka* Rp<input type="textnumber" name="dp" required></label>
+
           </div>
           <br>
-          <label onclick="printInvoice()">Print Invoice</label>
-          <input type="submit" onclick="printInvoice()" value="Sewa!" class="btn">
+          <input type="submit" value="Print Invoice!" formaction='/printinvoice' formtarget='_blank' class="btn2">
+          <input type="submit" value="Sewa!" onclick="konfirbarang()" class="btn">
           <script type="text/javascript">
             function konfirbarang(){
-              alert("barang termasukkan ke database");
+              setTimeout(function() { alert("Data termasukan :))"); }, 3);
             }
-            function printInvoice(){window.print();}
+            function printInvoice(){}
           </script>
         </form>
       </div>

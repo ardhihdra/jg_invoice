@@ -6,8 +6,10 @@ var con = mysql.createConnection({
   password: "password"
 });
 // install mysql first
+// port: "3306",
 // then npm mysql
-
+//localhost, user, -
+console.log("cuk");
 con.connect(function(err){
   if(err) throw err;
   console.log("Connected to database");

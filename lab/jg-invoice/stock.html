@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="/form.css">
       <!-- ntar css di href ilangin  -->
 
-    <div class="row">
+    <div class="row" id="index">
       <label class="col-50"> <a href="form.html">Penyewaan</a></label>
       <label class="col-50"><a href="return.html">Pengembalian</a></label>
       <label class="col-50"><a href="stock.html">Cek Stok</a></label>
-      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="input.html">Update Barang</a></label>
       <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
       <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
       <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
@@ -20,9 +20,9 @@
 
   <body>
     <div class="container">
-      <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+      <img src="/JG.png" alt="jg-logo"width="5%">
       <h1>Cek Stok Barang</h1>
-      <form class="" action="/stock.html" method="post">
+      <form class="" action="/check_table.html" method="post">
         <div class="col-50">
           <select class="col-50" name="gear">
             <option name="nul" >-</option>
@@ -32,11 +32,11 @@
           <div class="row">
             <div class="col-50">
               <label for="rndate"><i class="fa fa-date"></i>Tanggal Penyewaan (Pengambilan)</label>
-              <input type="datetime-local" id="rndate" name="rentdate" placeholder="">
+              <input type="date" id="rndate" name="rentdate" placeholder="">
             </div>
             <div class="col-50">
               <label for="rtdate"><i class="fa fa-date"></i>Tanggal Pengembalian</label>
-              <input type="datetime-local" id="rtdate" name="returndate" placeholder="">
+              <input type="date" id="rtdate" name="returndate" placeholder="">
             </div>
           </div>
         </div><br>

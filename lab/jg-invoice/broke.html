@@ -2,21 +2,42 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Barang Rusak</title>
     <link rel="stylesheet" type="text/css" href="/form.css">
       <!-- ntar css di href ilangin  -->
 
-    <div class="row">
+    <div class="row" id="index">
       <label class="col-50"> <a href="form.html">Penyewaan</a></label>
       <label class="col-50"><a href="return.html">Pengembalian</a></label>
       <label class="col-50"><a href="stock.html">Cek Stok</a></label>
-      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
-      <label class="col-50"><a href="broke.html">Input Barang Rusak</label>
-        <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</label>
+      <label class="col-50"><a href="input.html">Update Barang</a></label>
+      <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
+      <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
       <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
     </div>
   </head>
   <body>
+    <div class="container">
 
+      <img src="/JG.png" alt="jg-logo" width="5%">
+
+      <form action="/broke.html" method='post' name='form1'>
+        <div class="col-50">
+          <h1>Input Barang Rusak</h1>
+          <br><br>
+          <label>Pilih barang : <select class='gear' name='gear'>
+            <option value="">- : 0</option>
+          </select></label><br>
+          <label>Total Barang Rusak : <input type="numbertext" id="input_qty" name="ngear" value=0 placeholder="misal 3" required></label><br>
+          <label>Servis Ke : <input type="numbertext" name="servis" value="-" required></label>
+          <label>Biaya Rp<input type="numbertext" name="biaya" value="0" required></label>
+          <label>Tanggal Diservis : <input type='date' name='tanggalservis' required></label><br>
+          <label>Keterangan : <input type='text' name='keterangan' value='-' required></label>
+          <input type="checkbox" name="hapus" value="1">Centang untuk menghapus barang dari database<br><br>
+        </div>
+        <input type="submit" value="Tambahkan Barang" class="btn">
+      </form>
+    </div>
+    Copyright CV.Jelajah Garut (c) 2018 Copyright Holder All Rights Reserved.
   </body>
 </html>

@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="/form.css">
       <!--  -->
 
-    <div class="row">
+    <div class="row" id="index">
       <label class="col-50"> <a href="form.html">Penyewaan</a></label>
       <label class="col-50"><a href="return.html">Pengembalian</a></label>
       <label class="col-50"><a href="stock.html">Cek Stok</a></label>
-      <label class="col-50"><a href="input.html">Input Barang Baru</a></label>
+      <label class="col-50"><a href="input.html">Update Barang</a></label>
       <label class="col-50"><a href="broke.html">Input Barang Rusak</a></label>
       <label class="col-50"><a href="returnbroke.html">Pengembalian Barang Rusak</a></label>
       <label class="col-50"><a href="file.html">Buat File Rekap</a></label>
@@ -23,27 +23,28 @@
         <form action="/checkout.html" method='post' name='form1'>
           <div class="row">
             <div class="col-50">
-              <img src="/JG.png" alt="jg-logo" heigh="10%" width="10%">
+              <img src="/JG.png" alt="jg-logo" width="10%">
               <h1>Info Penyewa</h1>
 
               <label for="fname"><i class="fa fa-user"></i> Nama Penyewa</label>
-              <input type="text" id="fname" name="name" placeholder="Eka Gacong">
+              <input type="text" id="fname" name="name" placeholder="Eka Gacong" required>
               <label for="pnumber"><i class="fa fa-envelope"></i> Nomor HP</label>
-              <input type="text" id="pnumber" name="phonenumber" placeholder="085794158166">
+              <input type="text" id="pnumber" name="phonenumber" placeholder="085794158166" required>
               <label for="dest"><i class="fa fa-destination"></i> Tujuan</label>
-              <input type="text" id="dst" name="destination" placeholder="Pataruman">
+              <input type="text" id="dst" name="destination" placeholder="Pataruman" required>
               <label for="email"><i class="fa fa-email"></i> Email</label>
               <input type="text" id="email" name="email" placeholder="odol@gmail.com">
 
 
               <div class="row">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
                 <div class="col-50">
-                  <label for="rndate"><i class="fa fa-date"></i>Tanggal Penyewaan (Pengambilan)</label>
-                  <input type="datetime-local" id="rndate" name="rentdate"value={start.toHtmlInput_datetime_local()}>
+                  <label for="rndate"><i class="fadate"></i>Tanggal Penyewaan (Pengambilan)</label>
+                  <input type="date" id="rndate" name="rentdate" data-date="" data-date-format="DD MMMM YYYY" value={start.toHtmlInput_datetime_local()} required>
                 </div>
                 <div class="col-50">
-                  <label for="rtdate"><i class="fa fa-date"></i>Tanggal Pengembalian</label>
-                  <input type="datetime-local" id="rtdate" name="returndate" value={start.toHtmlInput_datetime_local()}>
+                  <label for="rtdate"><i class="fadate"></i>Tanggal Pengembalian</label>
+                  <input type="date" id="rtdate" name="returndate" data-date="" data-date-format="DD MMMM YYYY" value={start.toHtmlInput_datetime_local()} required>
                 </div>
               </div>
               <br>
@@ -88,8 +89,10 @@
               <div class="row">
                 <select class="col-50" name="gear7"><option name="nul">- : 0<divh class=harga7></divh></option></select>
                 jumlah : <input type="numbertext" name="barang7" class="col-50" value="0">
+                <br>
               </div>
-
+              <label for="keterangan">Keterangan* : </label>
+              <input type="text" name="keterangan" value='-' required>
             </div>
           </div>
 
@@ -115,5 +118,6 @@
         </div>
       </div>
     </div>
+
   </body>
 </html>
